@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width:100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(31, 28, 28);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+div{   
+    margin: 5px;
+    border-radius: 8px;
+    
+}
+.col1{
+    background-color: blue;
+}
+.col2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.row1{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.row1 p{
+    /* height: 2cm;
+    overflow: hidden; */
+}
+.row2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.row2 div:first-child{
+    background-color: blueviolet;
+}
+.row2 div:last-child{
+    background-color: yellow;
+}
+.row3{
+   background-color: white;
+   display: flex;
+  flex-direction: column;
+   padding: 5px;
+
+}
+form{
+    width: 100%;
+    
+    display: flex;
+   flex-direction: column;
+
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    
+    
+}
+form div label{
+    font-size: 18px;
+}
+form div input{
+    width: 100%;
+    height: 1cm;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    padding-left: 0.1cm;
+    border: none;
+    background-color: rgb(212, 212, 212);
+}
+button{
+    height: 1cm;
+    width: 98%;
+    margin-left: 1%;
+    background-color: rgb(228, 153, 15);
+    border: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+
+}
+ @media (max-width:600px) {
+    .container{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+

@@ -1,0 +1,36 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100vh;
+}
+.container div{
+  border-radius: 10px;
+  margin: 2px;
+
+}
+.col1{
+    background-color: blue;
+}
+.col2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.row1{
+    background-color: green;
+}
+.row2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.row2 div:first-child{
+    background-color: yellow;
+}
+.row2 div:last-child{
+    background-color: red;
+}
+.row3{
+    background-color: aquamarine;
+}
